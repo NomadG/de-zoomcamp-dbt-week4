@@ -5,6 +5,6 @@ default:
       type: bigquery
       method: service-account
       project: premium-buckeye-484913-s0
-      dataset: premium-buckeye-484913-s0.kestra_homework_dataset
+      dataset: kestra_homework_dataset
       location: europe-west2
       keyfile: /home/anurag_sarkar/zoomcamp/dbt_week_04/dbt_creds.json

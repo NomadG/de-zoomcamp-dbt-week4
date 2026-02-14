@@ -3,6 +3,7 @@
 target/
 dbt_packages/
 logs/
+dbt-env
 
 .gitignore:Zone.Identifier
 .gitignore:Zone.Identifier:Zone.Identifier
@@ -11,3 +12,4 @@ dbt_project.yml:Zone.Identifier
 dbt_project.yml:Zone.Identifier:Zone.Identifier
 README.md:Zone.Identifier
 README.md:Zone.Identifier:Zone.Identifier
+dbt_internal_packages/
