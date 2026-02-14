@@ -1,0 +1,8 @@
+sources:
+  - name: nytaxi
+    database: premium-buckeye-484913-s0 # Or name of your GCP project
+    schema: kestra_homework_dataset # Or name of your BigQuery dataset
+    
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata
