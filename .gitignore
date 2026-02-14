@@ -1,0 +1,13 @@
+# you shouldn't commit these into source control
+# these are the default directory names, adjust/add to fit your needs
+target/
+dbt_packages/
+logs/
+
+.gitignore:Zone.Identifier
+.gitignore:Zone.Identifier:Zone.Identifier
+dbt_creds.json
+dbt_project.yml:Zone.Identifier
+dbt_project.yml:Zone.Identifier:Zone.Identifier
+README.md:Zone.Identifier
+README.md:Zone.Identifier:Zone.Identifier
