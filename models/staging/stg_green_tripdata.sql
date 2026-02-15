@@ -17,6 +17,7 @@ renamed as (
       cast(lpep_dropoff_datetime as timestamp) as dropoff_datetime,
       
       -- trip info
+      'green' as taxi_type,
       store_and_fwd_flag,
       cast(passenger_count as integer) as passenger_count,
       cast(trip_distance as numeric) as trip_distance,
@@ -30,6 +31,7 @@ renamed as (
       cast(tolls_amount as numeric) as tolls_amount,
       cast(ehail_fee as numeric) as ehail_fee,
       cast(improvement_surcharge as numeric) as improvement_surcharge,
+      cast(congestion_surcharge as numeric) as congestion_surcharge,
       cast(total_amount as numeric) as total_amount,
       cast(payment_type as integer) as payment_type,
       {# {{ get_payment_type_description('payment_type') }} as payment_type_description #}

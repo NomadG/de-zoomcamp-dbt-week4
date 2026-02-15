@@ -17,10 +17,11 @@ renamed as (
       cast(tpep_dropoff_datetime as timestamp) as dropoff_datetime,
       
       -- trip info
+      'yellow' as taxi_type,
       store_and_fwd_flag,
       cast(passenger_count as integer) as passenger_count,
       cast(trip_distance as numeric) as trip_distance,
-      {# cast(trip_type as integer) as trip_type, #}
+      (1) as trip_type, -- yellow taxi can only have street hail which is of type 1
       
       -- payment info
       cast(fare_amount as numeric) as fare_amount,
@@ -28,7 +29,7 @@ renamed as (
       cast(mta_tax as numeric) as mta_tax,
       cast(tip_amount as numeric) as tip_amount,
       cast(tolls_amount as numeric) as tolls_amount,
-      {# cast(ehail_fee as numeric) as ehail_fee, #}
+      (0) as ehail_fee, -- yellow taxis do not have ehail fees
       cast(improvement_surcharge as numeric) as improvement_surcharge,
       cast(congestion_surcharge as numeric) as congestion_surcharge,
       cast(total_amount as numeric) as total_amount,

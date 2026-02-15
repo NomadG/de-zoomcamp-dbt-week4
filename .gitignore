@@ -4,6 +4,7 @@ target/
 dbt_packages/
 logs/
 dbt-env
+*.json
 
 .gitignore:Zone.Identifier
 .gitignore:Zone.Identifier:Zone.Identifier
